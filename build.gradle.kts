@@ -11,6 +11,7 @@ repositories {
     jcenter()
     mavenCentral()
     maven(Dependencies.Spigot.repository)
+    maven(Dependencies.SonaType.repository)
 }
 
 dependencies {

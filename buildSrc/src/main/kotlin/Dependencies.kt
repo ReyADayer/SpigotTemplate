@@ -12,6 +12,10 @@ object Dependencies {
         val repository = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
     }
 
+    object SonaType {
+        val repository = "https://oss.sonatype.org/content/groups/public/"
+    }
+
     object JUnit {
         val core = "org.junit.jupiter:junit-jupiter:5.5.2"
     }
