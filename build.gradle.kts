@@ -11,11 +11,12 @@ repositories {
     jcenter()
     mavenCentral()
     maven(Dependencies.Spigot.repository)
+    maven(Dependencies.Paper.repository)
     maven(Dependencies.SonaType.repository)
 }
 
 dependencies {
-    compile(Dependencies.Spigot.api)
+    compile(Dependencies.Paper.api)
     compileOnly(Dependencies.Spigot.annotations)
     kapt(Dependencies.Spigot.annotations)
     compile(Dependencies.Kotlin.stdlib)

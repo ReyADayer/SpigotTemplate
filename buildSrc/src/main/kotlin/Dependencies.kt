@@ -12,6 +12,13 @@ object Dependencies {
         val repository = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
     }
 
+    object Paper {
+        val version = "1.16.2-R0.1-SNAPSHOT"
+        val api = "com.destroystokyo.paper:paper-api:$version"
+        val repository = "https://papermc.io/repo/repository/maven-public/"
+    }
+
+
     object SonaType {
         val repository = "https://oss.sonatype.org/content/groups/public/"
     }
