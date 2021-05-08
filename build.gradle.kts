@@ -13,14 +13,20 @@ repositories {
     maven(Dependencies.Spigot.repository)
     maven(Dependencies.Paper.repository)
     maven(Dependencies.SonaType.repository)
+    maven(Dependencies.ProtocolLib.repository)
+    maven(Dependencies.MockBukkit.repository)
 }
 
 dependencies {
-    compile(Dependencies.Paper.api)
+    compile(Dependencies.Spigot.api)
     compileOnly(Dependencies.Spigot.annotations)
     kapt(Dependencies.Spigot.annotations)
     compile(Dependencies.Kotlin.stdlib)
+    compileOnly(Dependencies.ProtocolLib.core) {
+        exclude("com.comphenix.executors", "BukkitExecutors")
+    }
     testCompile(Dependencies.JUnit.core)
+    testCompile(Dependencies.MockBukkit.core)
 }
 
 buildscript {
